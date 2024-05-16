@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Kode Mono", monospace;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --clr-white: #fff;
+    --clr-dark: #212121;
+    --clr-grey: #4d4d4d;
+    --clr-ligt: #d8d8d8;
+}
+
+#Page {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--c-bg);
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.nav-section{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
