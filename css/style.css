@@ -32,7 +32,7 @@ button{
     border-radius: 0;
     padding: 10px 20px;
     margin: 10px 0px;
-    transition: font-size 0.3s
+    transition: font-size 0.3s;
 }
 
 button:hover{
@@ -63,7 +63,7 @@ button:hover{
     text-transform: uppercase;
     text-decoration: none;
     color: var(--rich-black);
-    transition: font-size 0.3s
+    transition: font-size 0.3s;
 }
 
 .nav a:hover{
