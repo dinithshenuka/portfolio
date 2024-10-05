@@ -44,8 +44,8 @@ button:hover{
 /* Nav bar */
 
 .nav-section{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-transform: uppercase;
 }
 
@@ -55,10 +55,11 @@ button:hover{
     flex-wrap: nowrap;
     align-content: flex-start;
     align-items: flex-start;
+    padding-left: 50px;
 }
 
 .nav a{
-    padding-left: 20px;
+    padding-right: 20px;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--rich-black);
@@ -83,7 +84,7 @@ button:hover{
     top: 10%;
     bottom: 10%;
     display: grid;
-    padding: 20px;
+    padding: 50px;
     justify-content: start;
     align-items: center;
     justify-items: start;
