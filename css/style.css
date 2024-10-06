@@ -27,6 +27,7 @@
 body{
     height: 100%;
     overflow-y: hidden;
+    overflow-x: hidden;
     background-color:var(--platinum);
     
 }
@@ -59,12 +60,12 @@ a:visited {
   
 /* mouse over link */
 a:hover {
-    color: var(--yinmn-blue);
+    color: #0000FF;
 }
   
 /* selected link */
 a:active {
-    color: #0000FF;
+    color: var(--oxford-blue);
 }
 
 
@@ -127,6 +128,27 @@ a:active {
     margin: 20px 0px;
 }
 
+/* animation */ 
+.animation {
+    z-index: -1;
+    width: 100px;
+    height: 100px;
+    background-color: var(--platinum);
+    position: relative;
+    animation-name: example;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+  
+@keyframes example {
+    0%   {background-color:var(--silver-lake-blue); left:150px; top:150px;}
+    25%  {background-color:var(--yinmn-blue); left:600px; top:100px;}
+    45%  {background-color:var(--silver-lake-blue); left:350px; top:300px}                        
+    60%  {background-color:blue; left:1000px; top:400px;}
+    85%  {background-color:var(--oxford-blue); left:370px; top:600px;}
+    100% {background-color:var(--silver-lake-blue); left:150px; top:150px;}
+}
+
 /* footer */
 
 footer {
@@ -153,3 +175,4 @@ footer {
 .quick-links a:visited {
     color: var(--oxford-blue);
 }
+
