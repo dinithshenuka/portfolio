@@ -149,3 +149,7 @@ footer {
 .quick-links{
     padding-right: 50px;
 }
+
+.quick-links a:visited {
+    color: var(--oxford-blue);
+}
