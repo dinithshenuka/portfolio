@@ -4,9 +4,17 @@
     padding: 0;
     font-family: "Roboto Mono", system-ui;;
     scroll-behavior: smooth;
+
+    
 }
 
-
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 1,
+  'opsz' 16
+}
 
 :root {
     --rich-black: #0d1b2aff;
@@ -44,6 +52,7 @@ button:hover{
 /* Nav bar */
 
 .nav-section{
+    position: fixed;
     margin-top: 20px;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -98,10 +107,25 @@ button:hover{
     margin: 20px 0px;
 }
 
+/* footer */
+
 footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: left;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer-text{
+    padding-left: 50px;
+}
+
+.quick-links{
+    padding-right: 50px;
 }
