@@ -48,6 +48,25 @@ button:hover{
     font-size: 1.1em;
 }
 
+a:link {
+    color: var(--oxford-blue);
+}
+  
+/* visited link */
+a:visited {
+    color: purple;
+}
+  
+/* mouse over link */
+a:hover {
+    color: var(--yinmn-blue);
+}
+  
+/* selected link */
+a:active {
+    color: #0000FF;
+}
+
 
 /* Nav bar */
 
@@ -83,7 +102,8 @@ button:hover{
 
 .active{
     color: var(--yinmn-blue); 
-    font-size: 1.5em;         
+    font-size: 1.5em;  
+    font-weight: bold;       
 }
 
 /* Nav bar end */
