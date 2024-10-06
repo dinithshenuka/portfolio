@@ -145,7 +145,7 @@ a:active {
     25%  {background-color:var(--yinmn-blue); left:600px; top:100px;}
     45%  {background-color:var(--silver-lake-blue); left:350px; top:300px}                        
     60%  {background-color:blue; left:1000px; top:400px;}
-    85%  {background-color:var(--oxford-blue); left:370px; top:600px;}
+    85%  {background-color:var(--yinmn-blue); left:370px; top:600px;}
     100% {background-color:var(--silver-lake-blue); left:150px; top:150px;}
 }
 
