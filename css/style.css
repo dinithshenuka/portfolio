@@ -66,6 +66,9 @@ a:active {
     color: var(--oxford-blue);
 }
 
+a[target] {
+    color: #000;
+  }
 
 /* Nav bar */
 
@@ -152,7 +155,7 @@ a:active {
 /* footer */
 
 footer {
-    position: relative;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -180,37 +183,7 @@ footer {
     color: #0000FF;
 }
 
- /* for mobile devices */
-@media only screen and (max-width: 768px) {
- 
-    .bio{
-        font-size: 3em;
-    }
-    .animation {
-        width: 50px;
-        height: 0px;
-    }
 
-    .animation {
-        z-index: -1;
-        width: 60px;
-        height: 60px;
-        background-color: var(--platinum);
-        position: absolute;
-        animation-name: example;
-        animation-duration: 25s;
-        animation-iteration-count: infinite;
-    }
-
-    @keyframes example {
-        0%   {background-color:var(--silver-lake-blue); left:150px; top:150px;}
-        25%  {background-color:var(--yinmn-blue); left:100px; top:100px;}
-        45%  {background-color:var(--silver-lake-blue); left:250px; top:300px}                        
-        60%  {background-color:blue; left:100px; top:400px;}
-        85%  {background-color:var(--yinmn-blue); left:170px; top:300px;}
-        100% {background-color:var(--silver-lake-blue); left:150px; top:150px;}
-    } 
-}
   
   
 /* Blog page */ 
@@ -293,8 +266,67 @@ footer {
 .banner-blog h1{
     margin-bottom: 20px;
 }
+/* blog page end */ 
 
+/* for mobile devices */
 @media only screen and (max-width: 768px) {
+    
+    /* home for mobile*/
+ 
+    .bio{
+        font-size: 3em;
+    }
+    .animation {
+        width: 50px;
+        height: 0px;
+    }
+
+    .animation {
+        z-index: -1;
+        width: 60px;
+        height: 60px;
+        background-color: var(--platinum);
+        position: absolute;
+        animation-name: example;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes example {
+        0%   {background-color:var(--silver-lake-blue); left:150px; top:150px;}
+        25%  {background-color:var(--yinmn-blue); left:100px; top:100px;}
+        45%  {background-color:var(--silver-lake-blue); left:250px; top:300px}                        
+        60%  {background-color:blue; left:100px; top:400px;}
+        85%  {background-color:var(--yinmn-blue); left:170px; top:300px;}
+        100% {background-color:var(--silver-lake-blue); left:150px; top:150px;}
+    } 
+
+    footer{
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .quick-links{
+        padding-left: 35px;        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-right: 35px;
+    }
+
+    .footer-text{
+        font-size: 0.7em;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    /* home for mobile end */
+
+    /* blog page mobile */
     .card {
         height: 300px;
         width: 350px;
@@ -314,5 +346,5 @@ footer {
         margin: 125px 50px;
     }
 
-
+    /* blog page for mobile end */ 
 }
