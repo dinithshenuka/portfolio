@@ -27,25 +27,11 @@
 body{
     height: 100%;
     background-color:var(--platinum);
+    overflow-x: hidden;
     
 }
 
 /* for all pages */
-
-button{
-    background-color: var(--oxford-blue);
-    color: var(--platinum);
-    border: none;
-    border-radius: 0;
-    padding: 10px 20px;
-    margin: 10px 0px;
-    transition: font-size 0.3s;
-}
-
-button:hover{
-    background-color: var(--yinmn-blue);
-    font-size: 1.1em;
-}
 
 a:link {
     color: var(--oxford-blue);
@@ -68,7 +54,24 @@ a:active {
 
 a[target] {
     color: #000;
-  }
+}
+
+.button{
+    background-color: var(--oxford-blue);
+    color: var(--platinum);
+    border: none;
+    border-radius: 0;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    transition: font-size 0.3s;
+    text-decoration: none;
+    color: var(--platinum);
+}
+
+.button:hover{
+    background-color: var(--yinmn-blue);
+    font-size: 1.1em;
+}
 
 /* Nav bar */
 
@@ -268,6 +271,34 @@ footer {
 }
 /* blog page end */ 
 
+
+/* form page styles */ 
+.foam-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+
+    padding: 50px;
+}
+
+input[type=text]:enabled {
+    background-color:var(--platinum);
+    border-color: var(--rich-black);
+}
+  
+input[type=text]:disabled {
+    background-color:var(--platinum);
+    border-color: var(--rich-black);
+    background-color: red;
+}
+
+input:checked {
+    height: 15px;
+    width: 15px;
+}
+
 /* for mobile devices */
 @media only screen and (max-width: 768px) {
     
@@ -348,3 +379,4 @@ footer {
 
     /* blog page for mobile end */ 
 }
+
