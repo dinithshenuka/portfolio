@@ -39,7 +39,7 @@ a:link {
   
 /* visited link */
 a:visited {
-    color: purple;
+    color: var(--platinum);
 }
   
 /* mouse over link */
@@ -49,7 +49,7 @@ a:hover {
   
 /* selected link */
 a:active {
-    color: var(--oxford-blue);
+    color: var(--rich-black);
 }
 
 a[target] {
@@ -273,6 +273,9 @@ footer {
 
 
 /* form page styles */ 
+.form-text{
+    padding: 0px 50px;
+}
 .foam-section{
     display: flex;
     flex-direction: column;
@@ -280,7 +283,7 @@ footer {
     align-content: flex-start;
     align-items: flex-start;
 
-    padding: 50px;
+    padding: 20px 50px;
 }
 
 input[type=text]:enabled {
