@@ -414,12 +414,50 @@ article :not(p) {
 
 /* about */
 .about{
-    display: flex;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 6fr);
+    row-gap: 75px;
+    column-gap: 50px;
     padding: 50px;
+    align-items: center;
+    justify-items: center;
 }
 
-.about > * {
-    padding: 50px;
+.about-content{
+    grid-column: span 2; 
+    grid-row: 1;
+
+    font-size: 2em;
+}
+
+.about div:not(.about-content) {
+    font-size: 1.5em;
+}
+
+.link1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.link2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    grid-column: span 2;
+    grid-row: 2;
+}
+
+.link3{
+    grid-column: 3;
+    grid-row: 2;
 }
 
 /* for mobile devices and tab */
@@ -522,6 +560,15 @@ article :not(p) {
 
     .projects-cards:hover{
         height: 300px;
+    }
+
+    /* about for mobile */ 
+    .about-content{
+        font-size: 1em;
+    }
+    
+    .about div:not(.about-content) {
+        font-size: 0.7em;
     }
 }
 
