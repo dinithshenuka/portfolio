@@ -39,7 +39,7 @@ a:link {
   
 /* visited link */
 a:visited {
-    color: var(--platinum);
+    color: purple;
 }
   
 /* mouse over link */
@@ -158,7 +158,7 @@ a[target] {
 /* footer */
 
 footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -302,7 +302,76 @@ input:checked {
     width: 15px;
 }
 
-/* for mobile devices */
+input:valid {
+    border: 2px solid green;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+/* form end */
+
+/* Blog post articles */ 
+article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 200px;
+    background: linear-gradient(to bottom, var(--platinum), white);
+}
+
+.pseudo-elements p::first-letter {
+    font-size: 1.5em;
+    color: var(--oxford-blue); 
+    font-weight: bold;        
+    font-style: italic;
+}
+
+.pseudo-elements p::first-line {
+    font-style: italic;
+    color: var(--yinmn-blue); 
+}
+
+.pseudo-elements p::before {
+    content: "Description: "; 
+    font-weight: bold; 
+    color: var(--silver-lake-blue); 
+}
+
+.pseudo-elements p::after {
+    content: " - This is a generated content."; 
+    font-style: italic; 
+    color: #007BFF;
+}
+
+.article-banner{
+    width: 75%;
+}
+
+article > p {
+    font-size: 0.9em;
+}
+
+article h2 + p {
+    font-style: italic;
+}
+
+article :not(p) {
+    font-size: 1.1em;
+}
+
+.semi-transparent{
+    color: var(--rich-black);
+    opacity: 0.5;
+}
+
+/* article end */ 
+
+/* for mobile devices and tab */
 @media only screen and (max-width: 768px) {
     
     /* home for mobile*/
@@ -361,6 +430,10 @@ input:checked {
     /* home for mobile end */
 
     /* blog page mobile */
+    .blog-page{
+        background: linear-gradient(to bottom, var(--platinum), white);
+    }
+
     .card {
         height: 300px;
         width: 350px;
@@ -381,5 +454,10 @@ input:checked {
     }
 
     /* blog page for mobile end */ 
+
+    /* article for mobile */
+    article {
+        padding: 20px 50px;
+    }
 }
 
