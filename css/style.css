@@ -524,10 +524,6 @@ article:not(p) {
     /* home for mobile end */
 
     /* blog page mobile */
-    .blog-page{
-        background: linear-gradient(to bottom, var(--platinum), white);
-    }
-
     .card {
         height: 300px;
         width: 350px;
