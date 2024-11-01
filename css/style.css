@@ -33,21 +33,20 @@ body{
 
 /* for all pages */
 
+/* links and buttons */
+
 a:link {
     color: var(--oxford-blue);
 }
   
-/* visited link */
 a:visited {
     color: purple;
 }
   
-/* mouse over link */
 a:hover {
     color: #0000FF;
 }
   
-/* selected link */
 a:active {
     color: var(--rich-black);
 }
@@ -134,7 +133,7 @@ a[target] {
     margin: 20px 0px;
 }
 
-/* animation */
+/* home page animation */
 .animation {
     z-index: -1;
     width: 100px;
@@ -186,7 +185,7 @@ footer {
     color: #0000FF;
 }
 
-
+/* footer end */
   
   
 /* Blog page */ 
@@ -326,7 +325,9 @@ article {
     align-content: space-between;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 20px 200px;
+
+    margin: 20px 200px 50px 200px;
+    padding: 20px;
     background: linear-gradient(to bottom, var(--platinum), white);
 }
 
@@ -354,8 +355,12 @@ article {
     color: #007BFF;
 }
 
-.article-banner{
-    width: 75%;
+article figure{
+    padding: 20px;
+}
+
+figcaption{
+    font-size: 0.7em;
 }
 
 article > p {
@@ -366,7 +371,7 @@ article h2 + p {
     font-style: italic;
 }
 
-article :not(p) {
+article:not(p) {
     font-size: 1.1em;
 }
 
@@ -545,8 +550,11 @@ article :not(p) {
     /* blog page for mobile end */ 
 
     /* article for mobile */
+
     article {
+        background: linear-gradient(to bottom, var(--platinum), white);
         padding: 20px 50px;
+        margin: 0;
     }
 
     /* projects page for mobile */
